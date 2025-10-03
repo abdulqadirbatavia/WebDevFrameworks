@@ -1,0 +1,26 @@
+[
+    {
+        "title": "90s TV Shows",
+        "question": "What was the name of the iconic sitcom about six friends living in New York City?"
+    },
+    {
+        "title": "Science Quiz", 
+        "question": "What is the chemical symbol for gold and why is it 'Au'?"
+    },
+    {
+        "title": "World History",
+        "question": "In what year did World War II officially end?"
+    },
+    {
+        "title": "Literature",
+        "question": "Which famous playwright wrote 'Romeo and Juliet'?"
+    },
+    {
+        "title": "Geography",
+        "question": "What is the largest ocean on Earth?"
+    },
+    {
+        "title": "Technology",
+        "question": "What does 'HTML' stand for in web development?"
+    }
+]

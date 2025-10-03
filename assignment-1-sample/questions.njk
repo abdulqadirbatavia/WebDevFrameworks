@@ -1,0 +1,13 @@
+---
+title: "All Questions"
+layout: layout.njk
+---
+<div class="questions-grid">
+    {% for question in collections.questions %}
+    <div class="question-item">
+        <a href="{{ question.url }}">{{ question.data.title }}</a>
+    </div>
+    {% endfor %}
+</div>
+
+<p><a href="/" class="btn">← Back to Home</a></p>

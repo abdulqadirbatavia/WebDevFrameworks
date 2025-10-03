@@ -1,0 +1,16 @@
+---
+pagination:
+    data: questions
+    size: 1
+    alias: question
+    addAllPagesToCollections: true
+permalink: "questions/{{ question.title | slug }}/"
+tags: questions
+layout: layout.njk
+---
+<div class="question-content">
+    <h2>{{ question.title }}</h2>
+    <p>{{ question.question | safe }}</p>
+</div>
+
+<p><a href="/questions/" class="btn">← Back to All Questions</a></p>

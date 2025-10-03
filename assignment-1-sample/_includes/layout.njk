@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>{% if title %}{{ title }}{% else %}Quiz Game{% endif %}</title>
+    <link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ol>
+            <li class="crumb"><a href="/">Home</a></li>
+            <li class="crumb"><a href="/questions/">All Questions</a></li>
+            <li class="crumb"><a href="/about/">About</a></li>
+        </ol>
+    </nav>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>
