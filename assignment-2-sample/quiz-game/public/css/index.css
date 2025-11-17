@@ -1,0 +1,137 @@
+/* Custom Modern Quiz Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding: 15px 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.crumb a:hover {
+    background: #667eea;
+    color: white;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #a0aec0;
+    content: '›';
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.crumb:last-child a::after {
+    content: '';
+}
+
+/* Main Container */
+.quiz-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #e2e8f0;
+}
+
+h1 {
+    color: #2d3748;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Question List */
+.question-list {
+    list-style: none;
+    padding: 0;
+}
+
+.question-item {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #667eea;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.question-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-left-color: #764ba2;
+}
+
+.question-link {
+    text-decoration: none;
+    color: #2d3748; /* DARK TEXT COLOR */
+    font-size: 1.3em;
+    font-weight: 600;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.question-link:hover {
+    color: #667eea;
+}
+
+/* Basic text styles */
+main {
+    color: #2d3748;
+}
+
+main a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}

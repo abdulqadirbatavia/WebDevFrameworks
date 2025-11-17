@@ -1,0 +1,14 @@
+---
+layout: layout.html
+title: Quiz Challenge
+---
+
+<h2>Test Your Knowledge!</h2>
+
+<ul class="question-list">
+{% for question in questions %}
+  <li class="question-item">
+    <a href="/questions/{{ question.slug }}/" class="question-link">{{ question.title }}</a>
+  </li>
+{% endfor %}
+</ul>

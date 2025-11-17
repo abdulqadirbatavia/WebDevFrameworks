@@ -1,0 +1,13 @@
+# Ignore Ghost logs and cache
+ghost-cms/content/logs/
+ghost-cms/content/data/
+ghost-cms/content/themes/
+ghost-cms/content/images/
+ghost-cms/content/settings/
+ghost-cms/content/public/
+
+# Ignore Node modules
+quiz-game/node_modules/
+
+# Ignore Eleventy output
+quiz-game/_site/
